@@ -1,0 +1,42 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'nunito',sans-serif;
+  font-size: 18x;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, transparent 0%, transparent 17%, rgba(87, 146, 234, 0.6) 17%, rgba(87, 146, 234, 0.6) 59%, transparent 59%, transparent 64%, rgba(34, 81, 222, 0.6) 64%, rgba(34, 81, 222, 0.6) 100%), linear-gradient(45deg, transparent 0%, transparent 2%, #5792ea 2%, #5792ea 46%, #72b2ef 46%, #72b2ef 54%, transparent 54%, transparent 63%, #0730d8 63%, #0730d8 100%), linear-gradient(90deg, white, white);
+}
+
+.content {
+  width: 25pc;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content .inner {
+  background: blue;
+  padding: 1em;
+  -webkit-clip-path: circle(10% at 0% 0%);
+          clip-path: circle(10% at 0% 0%);
+  -webkit-transition: -webkit-clip-path .5s ease-in-out;
+  transition: -webkit-clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+  padding: 10px 20px;
+}
+
+.content:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+}
+/*# sourceMappingURL=main.css.map */

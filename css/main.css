@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap");
 body, html {
   margin: 0px;
   padding: 0px;
-  font-family: 'nunito',sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18x;
   display: -ms-grid;
   display: grid;
@@ -13,30 +14,70 @@ body, html {
           align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-image: linear-gradient(135deg, transparent 0%, transparent 17%, rgba(87, 146, 234, 0.6) 17%, rgba(87, 146, 234, 0.6) 59%, transparent 59%, transparent 64%, rgba(34, 81, 222, 0.6) 64%, rgba(34, 81, 222, 0.6) 100%), linear-gradient(45deg, transparent 0%, transparent 2%, #5792ea 2%, #5792ea 46%, #72b2ef 46%, #72b2ef 54%, transparent 54%, transparent 63%, #0730d8 63%, #0730d8 100%), linear-gradient(90deg, white, white);
+  background-image: radial-gradient(circle at top right, #240977 0%, #240977 48%, #480795 48%, #480795 53%, #6d05b2 53%, #6d05b2 56%, #9102d0 56%, #9102d0 69%, #b500ed 69%, #b500ed 100%);
 }
 
 .content {
   width: 25pc;
-  background: white;
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .content .inner {
-  background: blue;
+  background: #5792ea;
   padding: 1em;
-  -webkit-clip-path: circle(10% at 0% 0%);
-          clip-path: circle(10% at 0% 0%);
+  -webkit-clip-path: circle(40% at 50% 50%);
+          clip-path: circle(40% at 50% 50%);
   -webkit-transition: -webkit-clip-path .5s ease-in-out;
   transition: -webkit-clip-path .5s ease-in-out;
   transition: clip-path .5s ease-in-out;
   transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
   padding: 10px 20px;
+  float: right;
+}
+
+.content .inner:hover {
+  background-color: green;
+  color: white;
 }
 
 .content:hover .inner {
   -webkit-clip-path: circle(75%);
           clip-path: circle(75%);
+}
+
+form {
+  padding: 1% 2%;
+}
+
+form div {
+  width: 100%;
+  margin: 1% 0px;
+  float: left;
+}
+
+form div label {
+  width: 100%;
+  float: left;
+}
+
+form div input {
+  padding: 10px 16px;
+  padding-left: 1px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  float: left;
+  width: 90%;
+  -webkit-transition: -webkit-box-shadow .5 ease-in-out;
+  transition: -webkit-box-shadow .5 ease-in-out;
+  transition: box-shadow .5 ease-in-out;
+  transition: box-shadow .5 ease-in-out, -webkit-box-shadow .5 ease-in-out;
+  margin: 5px 0px;
+}
+
+form div input:focus {
+  -webkit-box-shadow: 0px 0px 4px #bbb;
+          box-shadow: 0px 0px 4px #bbb;
 }
 /*# sourceMappingURL=main.css.map */
